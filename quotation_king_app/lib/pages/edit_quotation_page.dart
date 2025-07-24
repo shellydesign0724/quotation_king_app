@@ -16,6 +16,7 @@ class _EditQuotationPageState extends State<EditQuotationPage> {
   List<Map<String, dynamic>> _items = [];
   List<TextEditingController> _itemNameControllers = [];
   List<TextEditingController> _itemPriceControllers = [];
+
   List<TextEditingController> _noteControllers = [];
   int get _total => List.generate(_items.length, (i) {
     final price = int.tryParse(_itemPriceControllers[i].text) ?? 0;
